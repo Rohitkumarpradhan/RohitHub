@@ -75,3 +75,36 @@ window.addEventListener('mousemove', function (e) {
         navbar.style.top = "0";
     }
 });
+
+
+// --- MOBILE MENU LOGIC ---
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links a');
+
+// Toggle menu when clicking the hamburger
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+
+    // Switch icon between hamburger bars and 'X'
+    const icon = hamburger.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    }
+});
+
+// Automatically close the menu when a link is clicked
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+
+        // Reset icon back to hamburger bars
+        const icon = hamburger.querySelector('i');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    });
+});

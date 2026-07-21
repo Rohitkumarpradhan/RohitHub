@@ -459,12 +459,75 @@ footer p {
     color: var(--text-muted);
 }
 
+/* Hamburger Icon Styling (Hidden on Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--accent);
+    z-index: 1001;
+    /* Keeps it above the menu */
+}
+
+/* Mobile Responsive Adjustments */
+/* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .grid-2 {
         grid-template-columns: 1fr;
     }
 
+    /* Ensure Logo stays above the overlay */
+    .logo {
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Show Hamburger on Mobile & keep it above overlay */
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Full-Screen Blur Overlay Menu */
     .nav-links {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(10, 10, 12, 0.95);
+        /* Deep dark with slight transparency */
+        backdrop-filter: blur(15px);
+        /* Elegant blur effect */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+
+        /* Hidden state for fade animation */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1000;
+        border-left: none;
+        /* Remove the old border */
+    }
+
+    /* Active state to fade in and slide down slightly */
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Make links bigger and cleaner */
+    .nav-links a {
+        margin: 0;
+        font-size: 1.5rem;
+        /* Larger text for full screen */
+        letter-spacing: 2px;
     }
 }
