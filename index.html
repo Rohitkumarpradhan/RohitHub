@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar Pradhan | Android & Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link to your new CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="logo">RKP<span style="color: var(--accent);">.</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a> 
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/Rohitkumarpradhan" target="_blank" class="nav-btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/rohit-kumar-pradhan-b03b6732a/" target="_blank" class="nav-btn">LinkedIn</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (WITH THE NEW ID="HOME") -->
+    <section id="home" class="hero reveal"
+        style="flex-direction: row; flex-wrap: wrap-reverse; justify-content: space-between; gap: 50px; align-items: center;">
+
+        <!-- Text Content -->
+        <div style="flex: 1; min-width: 320px;">
+            <p class="hero-mono">System.out.println("Hello, World!"); My name is</p>
+            <h1>Rohit K. Pradhan.</h1>
+            <h2 id="typing-text"></h2>
+            <p style="max-width: 600px; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 3rem;">
+                Software Engineering student at C. V. Raman Global University and intermediate Android Developer. I
+                specialize in crafting robust backend models and fluid, scalable mobile interfaces using Jetpack
+                Compose.
+            </p>
+            <a href="#projects" class="btn">View_Portfolio()</a>
+        </div>
+
+        <!-- Sleek Circular Profile Picture -->
+        <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 2rem;">
+            <div
+                style="width: 280px; height: 280px; border-radius: 50%; position: relative; box-shadow: 0 0 40px rgba(250, 204, 21, 0.25);">
+                <!-- Glowing Border Effect -->
+                <div
+                    style="position: absolute; inset: -4px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), transparent); z-index: -1;">
+                </div>
+                <!-- Your Image -->
+                <img src="Rohit_formal_black.jpg" alt="Rohit Kumar Pradhan"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 6px solid var(--bg-deep);">
+            </div>
+        </div>
+
+    </section>
+        
+    <section id="about" class="reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="grid-2">
+            <div>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    I'm deeply passionate about solving complex, real-world problems through clean architecture.
+                    Currently pursuing my B.Tech in CSE (9.17 CGPA), my academic foundation in Data Structures and
+                    Algorithms drives my hands-on software projects.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    From predictive machine learning models to responsive mobile apps, I enjoy operating at the
+                    intersection of heavy data logic and smooth user experiences. Here are a few technologies I've been
+                    working with recently:
+                </p>
+                <div class="tech-list">
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">Jetpack Compose</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Git</span>
+                </div>
+            </div>
+            <!-- Tech Graphic -->
+            <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+                <div
+                    style="width: 280px; height: 280px; border: 2px solid var(--accent); border-radius: 8px; position: relative;">
+                    <div style="position: absolute; top: 15px; left: 15px; width: 100%; height: 100%; background: var(--bg-surface); border-radius: 8px; display: flex; justify-content: center; align-items: center; transition: var(--transition);"
+                        onmouseover="this.style.top='0'; this.style.left='0';"
+                        onmouseout="this.style.top='15px'; this.style.left='15px';">
+                        <i class="fa-solid fa-microchip" style="font-size: 6rem; color: rgba(250, 204, 21, 0.8);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="reveal">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span class="timeline-date">May 2026 - June 2026</span>
+                <h3 class="timeline-title">Summer Intern</h3>
+                <div class="timeline-org">Defence Research and Development Organisation (DRDO)</div>
+                <ul>
+                    <li>Engineered a multi-object tracking system utilizing Kalman Filtering for advanced motion
+                        prediction and state estimation.</li>
+                    <li>Generated and analyzed noisy trajectory data, mitigating Gaussian measurement noise, sensor
+                        drift, and outlier disturbances.</li>
+                    <li>Integrated Python and C++ components for trajectory generation, data processing, filtering, and
+                        visualization.</li>
+                    <li>Evaluated tracking performance using RMSE-based analysis, demonstrating significantly improved
+                        trajectory estimation.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">Sept 2024 - June 2028</span>
+                <h3 class="timeline-title">B.Tech, Computer Science and Engineering</h3>
+                <div class="timeline-org">C. V. Raman Global University</div>
+                <ul>
+                    <li><strong>CGPA:</strong> 9.17 / 10</li>
+                    <li><strong>Core Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming,
+                        DBMS, Computer Networks.</li>
+                    <li><strong>Certifications:</strong> Digital Productivity with AI - UNICEF (Jan 2026).</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+<section id="projects" class="reveal">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid-3">
+
+        <!-- PaySphere -->
+        <div class="card">
+            <div class="card-top">
+                <i class="fa-solid fa-wallet card-icon"></i>
+                <div class="card-links">
+                    <a href="https://github.com/Rohitkumarpradhan/PaySphere" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>PaySphere</h3>
+            <p>A modern FinTech-style Wallet UI featuring virtual cards, a finance dashboard, and an animated currency
+                tracker. Built from the ground up to showcase fluid, responsive mobile design.</p>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-top: auto;">
+                Kotlin • Jetpack Compose
+            </div>
+        </div>
+
+        <!-- Bank Marketing -->
+        <div class="card">
+            <div class="card-top">
+                <i class="fa-solid fa-chart-line card-icon"></i>
+                <div class="card-links">
+                    <a href="https://github.com/Rohitkumarpradhan/Bank-Marketing-Campaign-Success-Prediction"
+                        target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Bank Marketing Predictor</h3>
+            <p>A supervised machine learning model predicting bank marketing campaign success (term deposit
+                subscriptions) using complex customer attributes and a finely tuned Random Forest classifier.</p>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-top: auto;">
+                Python • Scikit-learn • ML
+            </div>
+        </div>
+
+        <!-- Colon Disease Detection -->
+        <div class="card">
+            <div class="card-top">
+                <i class="fa-solid fa-microscope card-icon"></i>
+                <div class="card-links">
+                    <a href="https://github.com/Rohitkumarpradhan/colon-disease-detection-ml" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Colon Disease Detection ML</h3>
+            <p>An advanced machine learning model for detecting colon cancer using medical images and clinical text
+                reports. Integrates SVM for image classification with TF-IDF and Logistic Regression for text analysis.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-top: auto;">
+                Python • SVM • TF-IDF
+            </div>
+        </div>
+
+        <!-- Smart Study Tracker -->
+        <div class="card">
+            <div class="card-top">
+                <i class="fa-solid fa-book-open-reader card-icon"></i>
+                <div class="card-links">
+                    <a href="https://github.com/Rohitkumarpradhan/Smart-Study-Tracker" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Smart Study Tracker</h3>
+            <p>A robust desktop application built as a comprehensive study tracker. Engineered with a solid backend
+                database architecture to efficiently manage and track academic progress.</p>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-top: auto;">
+                Java • JDBC • SQLite
+            </div>
+        </div>
+
+        <!-- Weathering -->
+        <div class="card">
+            <div class="card-top">
+                <i class="fa-solid fa-cloud-sun card-icon"></i>
+                <div class="card-links">
+                    <a href="https://github.com/Rohitkumarpradhan/Weathring" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Weathring</h3>
+            <p>A comprehensive weather forecasting Android app fetching real-time data via REST APIs. Built with a
+                highly responsive, modern UI structured on clean, modular architecture.</p>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-top: auto;">
+                Kotlin • REST APIs
+            </div>
+        </div>
+
+        <!-- Shuttersnap -->
+        <div class="card">
+            <div class="card-top">
+                <i class="fa-solid fa-camera card-icon"></i>
+                <div class="card-links">
+                    <a href="https://github.com/Rohitkumarpradhan/shuttersnap" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Shuttersnap</h3>
+            <p>A modern web application demonstrating strong front-end architecture and component-based design for
+                managing and displaying high-quality digital assets.</p>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-top: auto;">
+                TypeScript • Web
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="github" class="reveal">
+        <h2 class="section-title">Open Source Stats</h2>
+        <p style="color: var(--text-muted); text-align: center; max-width: 700px; margin: 0 auto;">
+            Monitoring code commits, repositories, and continuous integration. Live data pulled directly from the GitHub
+            API.
+        </p>
+
+        <div class="github-stats">
+            <!-- Customized to match the Dark/Yellow Theme -->
+            <img src="https://github-readme-stats.vercel.app/api?username=Rohitkumarpradhan&show_icons=true&theme=transparent&hide_border=true&title_color=facc15&icon_color=facc15&text_color=9ca3af&bg_color=141417"
+                alt="GitHub Stats" />
+
+            <div class="github-row">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rohitkumarpradhan&layout=compact&theme=transparent&hide_border=true&title_color=facc15&text_color=9ca3af&bg_color=141417"
+                    alt="Top Languages" />
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal" style="text-align: center; max-width: 600px; padding-bottom: 0;">
+        <h2 class="section-title" style="justify-content: center;">Initialize Contact</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">
+            My inbox is always open for new professional opportunities, algorithm discussions, or Android development
+            collaborations.
+        </p>
+        <a href="mailto:rohit.kumar.pradhan2907@gmail.com" class="btn"
+            style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">Say_Hello()</a>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/Rohitkumarpradhan" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:rohitkumarpradhan082@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>Built by Rohit Kumar Pradhan &copy; 2026</p>
+    </footer>
+
+<!-- Interactive Scripts -->
+<script src="script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
