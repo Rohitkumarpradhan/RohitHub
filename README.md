@@ -14,4 +14,4 @@ A sleek, responsive personal portfolio website showcasing my engineering project
 * **Email:** rohit.kumar.pradhan2907@gmail.com
 
 ---
-*Designed & Engineered by Rohit Kumar Pradhan © 2026*
+*Made with love by Rohit Kumar Pradhan © 2026*
